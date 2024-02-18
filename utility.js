@@ -13,14 +13,14 @@ function discount(elementId, value, amount) {
     const p = document.createElement('p');
     p.innerText = 'Discount';
     const p2 = document.createElement('p');
-    const discountAmount = value * amount;
+    const discountAmount = (value * amount).toFixed(2);
     p2.innerText = discountAmount;
     discountText.appendChild(p);
     discountText.appendChild(p2);
     return discountAmount;
 }
 function discountAmountForGrandTotal(value, amount) {
-    const discountAmount = value * amount;
+    const discountAmount = (value * amount).toFixed(2);
     return discountAmount;
 }
 
