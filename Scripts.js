@@ -53,7 +53,7 @@ applyBtn.addEventListener('click', function (event) {
             const couponSection = document.getElementById('coupon-section');
             couponSection.classList.add('hidden');
         }
-        else if (couponCode === 'COUPLE20') {
+        else if (couponCode === 'COUPLE 20') {
             discount('discount-text', priceSum, 0.2);
             const discountAmount = discountAmountForGrandTotal(priceSum, 0.2);
             document.getElementById('grand-total').innerText = priceSum - discountAmount;
